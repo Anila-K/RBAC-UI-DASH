@@ -1,0 +1,275 @@
+.main-content {
+    margin-left: 250px; 
+    margin-top: 60px; 
+    padding: 20px; 
+    flex: 1;
+    transition: margin-left 0.3s ease; 
+    position: relative;
+    z-index: 1;
+  }
+  
+  .main-content.collapsed {
+    margin-left:0px;
+    width: 100%;
+  }
+  .dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  .container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    max-width: 570px;
+    max-height: 600px;
+  }
+  
+  .card-ds2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    flex: 1; 
+    transition: transform 0.3s ease;
+  }
+  .card-ds2:hover {
+    transform: scale(1.04);
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  .dashboard-container > *:nth-child(1) {
+    flex: 1; 
+  }
+  
+  .dashboard-container > *:nth-child(2) {
+    flex: 3; 
+  }
+  
+  .stats-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; 
+  }
+  
+  .card-ds  {
+  display: flex; 
+  flex-direction: row;
+  align-items: center; 
+  gap: 15px; 
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+.card-ds:hover {
+  transform: scale(1.04);
+}
+
+.icon-ds {
+  font-size: 25px;
+  font-style: normal;
+  border-radius: 50%;
+  padding: 10px;
+  align-items: center;
+  background-color: #d1d0d0;
+}
+
+.card-title {
+  font-size: 16px;
+  text-align: left;
+  color: #555;
+  margin: 0;
+}
+
+.card-value {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+.permissions-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+.permissions-section:hover {
+  transform: scale(1.02);
+}
+
+.permissions-section h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #333;
+}
+.permissions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.permissions-table th,
+.permissions-table td {
+  text-align: left;
+  padding: 12px 16px; 
+  border: none; 
+}
+
+.permissions-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #555;
+}
+
+.permissions-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.permissions-table td {
+  color: #333;
+}
+
+.permissions-table td:nth-child(1) {
+  text-align: center;
+}
+.manage-permissions-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.manage-permissions-btn {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 10px 20px ;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.manage-permissions-btn:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 70px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 80px;
+  }
+
+  .container-2,
+  .dashboard-container {
+    flex-direction: column; 
+    gap: 10px;
+    position: relative;
+  }
+
+  .card-ds2, .card-ds, .permissions-section {
+    padding: 10px;
+    margin: 8px;
+  }
+
+  .dashboard-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .permissions-table th, .permissions-table td {
+    padding: 10px;
+    font-size: 14px;
+    width: 75%;
+    margin-left: 80px;
+  }
+
+  .permissions-section {
+    padding: 15px;
+  }
+
+  .manage-permissions-btn-container {
+    justify-content: center; 
+  }
+
+  .manage-permissions-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .icon-ds {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-value {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .permissions-table th, .permissions-table td {
+    font-size: 12px; 
+    padding: 8px;
+  }
+
+  .dashboard-title {
+    font-size: 18px;
+  }
+
+  .manage-permissions-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .icon-ds {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .card-value {
+    font-size: 10px;
+  }
+
+  .permissions-section {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "name": "Prabhas",
+      "email": "prabhasks@gmail.com",
+      "username": "prabhas123",
+      "profileImage": "/static/media/user.png",
+      "role": "Admin",
+      "status": "Active",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-20T12:00:00Z"
+        },
+        {
+          "permission": "Write",
+          "date": "2024-11-20T12:00:00Z"
+        },
+        {
+          "permission": "Delete",
+          "date": "2024-11-20T12:00:00Z"
+        }
+      ],
+      "department": "IT",
+      "expirationDate": "2025-11-20T12:00:00Z",
+      "id": "eb91"
+    },
+    {
+      "name": "Santhosh",
+      "email": "santhos23@gmail.com",
+      "username": "santhosh456",
+      "profileImage": "/static/media/user.png",
+      "role": "User",
+      "status": "Inactive",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-22T09:30:00Z"
+        }
+      ],
+      "department": "Marketing",
+      "expirationDate": "2025-06-22T09:30:00Z",
+      "id": "6f48"
+    },
+    {
+      "name": "Anjali",
+      "email": "anjali87@gmail.com",
+      "username": "anjali789",
+      "profileImage": "/static/media/user.png",
+      "role": "User",
+      "status": "Active",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-25T10:00:00Z"
+        },
+        {
+          "permission": "Write",
+          "date": "2024-11-25T10:00:00Z"
+        }
+      ],
+      "department": "HR",
+      "expirationDate": "2025-11-25T10:00:00Z",
+      "id": "1acb"
+    },
+    {
+      "name": "Neha",
+      "email": "neha.user@gmail.com",
+      "username": "neha123",
+      "profileImage": "/static/media/user.png",
+      "role": "User",
+      "status": "Active",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-26T10:00:00Z"
+        }
+      ],
+      "department": "Finance",
+      "expirationDate": "2025-11-26T10:00:00Z",
+      "id": "4e83"
+    },
+    {
+      "name": "George",
+      "email": "george.user@gmail.com",
+      "username": "george456",
+      "profileImage": "/static/media/user.png",
+      "role": "User",
+      "status": "Active",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-26T10:00:00Z"
+        }
+      ],
+      "department": "Sales",
+      "expirationDate": "2025-11-26T10:00:00Z",
+      "id": "813d"
+    },
+    {
+      "name": "Ravi",
+      "email": "ravi.user@gmail.com",
+      "username": "ravi123",
+      "profileImage": "/static/media/user.png",
+      "role": "User",
+      "status": "Active",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-26T11:00:00Z"
+        },
+        {
+          "permission": "Write",
+          "date": "2024-11-26T11:00:00Z"
+        }
+      ],
+      "department": "Operations",
+      "expirationDate": "2025-11-26T11:00:00Z",
+      "id": "c784"
+    }
+  ],
+  "roles": [
+    {
+      "roleName": "Admin",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-20T12:00:00Z"
+        },
+        {
+          "permission": "Write",
+          "date": "2024-11-20T12:00:00Z"
+        },
+        {
+          "permission": "Delete",
+          "date": "2024-11-20T12:00:00Z"
+        },
+        "Read",
+        "Write",
+        "Delete"
+      ],
+      "id": "6fb5"
+    },
+    {
+      "roleName": "User",
+      "permissions": [
+        {
+          "permission": "Read",
+          "date": "2024-11-22T09:30:00Z"
+        },
+        "Read"
+      ],
+      "id": "2806"
+    }
+  ]
+}

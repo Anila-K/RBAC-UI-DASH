@@ -1,0 +1,193 @@
+.add-user-page {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  .add-user-page h2 {
+    margin-top: 20px;
+  }
+  .form-cont1 , .form-cont2, .form-cont3, .form-cont4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-items: center;
+    width: 95%;
+  }
+  .form-cont5 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .user-form {
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 30px 30px 30px;
+    margin-left: 100px;
+    width: 70%;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  .user-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .user-form label {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+    flex: 1;
+    font-weight: bold;
+  }
+  
+  .user-form input[type="text"],
+  .user-form input[type="email"],
+  .user-form input[type="date"],
+  .user-form input[type="file"],
+  .user-form select,
+  .user-form textarea {
+    width: 90%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .user-form select {
+    width: 96%;
+  }
+  
+  .user-form input[type="text"]:focus,
+  .user-form input[type="email"]:focus,
+  .user-form input[type="date"]:focus,
+  .user-form input[type="file"]:focus,
+  .user-form select:focus,
+  .user-form textarea:focus {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-section label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .form-section input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .user-form button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    padding: 10px 20px;
+    max-width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .user-form button:hover {
+    background-color: #ccc;
+    color: #4a90e2;
+  }
+  
+  .user-form button[type="reset"] {
+    background-color: #f44336;
+    margin-left: 10px;
+  }
+  
+  .user-form button[type="reset"]:hover {
+    background-color: #ccc;
+    color: #f44336;
+  }
+  
+  .user-form .form-submit-button {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+  }
+  
+  .user-form button[type="reset"] {
+    width: calc(50% - 10px);
+  }
+  
+  .user-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 600px) {
+    .user-form {
+      margin-left: 0;
+      width: 90%; 
+      padding: 20px; 
+    }
+  
+    .form-cont1, .form-cont2, .form-cont3, .form-cont4 {
+      display: flex;
+      flex-direction: column; 
+      gap: 10px;
+      width: 100%; 
+      max-width: 400px;
+      justify-content: flex-start !important;
+    }
+  
+    .user-form h2 {
+      font-size: 20px; 
+    }
+  
+    .user-form input[type="text"],
+    .user-form input[type="email"],
+    .user-form input[type="date"],
+    .user-form input[type="file"],
+    .user-form select,
+    .user-form textarea {
+      width: 100%; 
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .user-form input[type="file"] {
+      margin-right: 30px;
+    }
+    .user-form button {
+      width: 100%; 
+      margin-top: 10px; 
+    }
+  
+    .user-form .form-buttons {
+      flex-direction: column; 
+      gap: 10px; 
+    }
+  
+    .form-section {
+      flex-direction: column; 
+    }
+    .add-user-page h2 {
+          font-size: 18px;
+          margin-left: 30px;
+      }
+  }
+  

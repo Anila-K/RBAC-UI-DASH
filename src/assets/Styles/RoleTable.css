@@ -1,0 +1,278 @@
+.role-table {
+    margin-top: 50px;
+  }
+  .role-table h2 {
+    display: none;
+  }
+  .add-role {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .add-role input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .add-role-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 20px ;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .add-role-button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .add-role-button:hover {
+    color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  .permissions label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .permissions input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #ddd;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .permissions label {
+    display: block;
+    margin: 5px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+  }
+  
+  table tbody tr {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  table td {
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 15px;
+    color: #333333;
+    align-items: center;
+  }
+  
+  table td:last-child {
+    text-align: center;
+  }
+  
+  .permissions label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .permissions input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+  }
+  .edit-role-btn,
+.dlt-role-btn {
+background-color: #007bff; 
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 15px;
+font-size: 14px;
+margin-top: 20px;
+cursor: pointer;
+width: 100px;
+height: 35px;
+text-align: center;
+}
+
+.dlt-role-btn {
+background-color: #dc3545; 
+}
+
+.edit-role-btn:hover {
+background-color: #ccc; 
+color: #007bff;
+}
+
+.dlt-role-btn:hover {
+  background-color: #ccc; 
+  color: #dc3545;
+}
+  
+ 
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .role-form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .role-form-actions button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .role-form-save {
+    background-color: #007bff; 
+    color: white;
+  }
+  .role-form-save:hover {
+    background-color: #ccc;
+    color: #007bff;
+  }
+  .role-form-cancel {
+    background-color: #dc3545;
+    color: white;
+  }
+  .role-form-cancel:hover {
+    background-color: #ccc;
+    color:#dc3545;
+  }
+  #roleName {
+    width: 90%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  @media (max-width: 760px) {
+    .role-table {
+      margin-top: 20px; 
+      font-size: 12px; 
+      width: 100%;
+    }
+  
+    .role-table table {
+      display: block; 
+      white-space: nowrap;
+      margin-left: 30px;
+      margin-right: 20px !important;
+    }
+  
+    .role-table th,
+    .role-table td {
+      padding: 10px; 
+      font-size: 12px; 
+    }
+    .edit-role-btn,
+    .dlt-role-btn {
+      width: 80%; 
+      height: auto; 
+      font-size: 12px; 
+      padding: 8px 10px; 
+      margin: 10px 0; 
+    }
+  
+    .edit-role-btn,
+    .dlt-role-btn {
+      display: block; 
+    }
+  
+    
+    .add-role {
+      flex-direction: column;
+      gap: 10px; 
+    }
+  
+    .add-role input {
+      width: 100%;
+    }
+  
+  
+    .modal-content {
+      width: 50%; 
+      padding: 20px;
+      margin-left: 50px;
+    }
+  
+   
+    .permissions label {
+      font-size: 12px; 
+      padding: 3px 8px; 
+    }
+    .add-role-button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
+    }
+  }
+  

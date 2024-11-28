@@ -1,0 +1,182 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #222;
+  padding-top: 40px;
+  color: #fff;
+  position: fixed; 
+  top:74px;
+  left: 0;
+  transition: width 0.3s ease;
+  overflow-x: hidden; 
+}
+
+.sidebar.collapsed {
+  width: 100px; 
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.sidebar.collapsed a span {
+  display: none; 
+}
+.toggle-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #555;
+}
+
+.toggle-btn.rotate {
+  transform: rotate(180deg);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.users-section {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.sidebar .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar .dropdown-menu {
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.sidebar .dropdown-menu li {
+  margin-top: 5px;
+}
+
+.sidebar .dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 0;
+  display: block;
+}
+
+.sidebar .dropdown-menu li a:hover {
+  background-color: #444;
+}
+
+
+.sidebar .dropdown-menu.active {
+  display: block;
+}
+
+
+.sidebar.collapsed .dropdown-toggle {
+  justify-content: center;
+}
+
+.sidebar.collapsed .dropdown-menu {
+  display: none;
+}
+.sidebar ul .subsection {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.sidebar ul .subsection li {
+  padding: 5px 15px;
+}
+
+.sidebar ul .subsection li a {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.sidebar ul .subsection li.active a {
+  background-color: #555;
+  color: #fff;
+}
+.dropdown-icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .sidebar {
+    z-index: 1000; 
+    position: fixed; 
+    left: 0; 
+    transition: transform 0.3s ease, width 0.3s ease; 
+    overflow-y: auto; 
+  }
+
+ 
+  .toggle-btn {
+    z-index: 1100; 
+    top: 15px; 
+    left: 15px; 
+    background-color: #333;
+  }
+
+  
+  .main-content {
+    z-index: 1; 
+    position: relative; 
+  }
+
+  
+  .sidebar .dropdown-menu {
+    padding-left: 10px; 
+  }
+}

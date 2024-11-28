@@ -1,0 +1,12 @@
+/* App container */
+.app {
+  display: flex;
+  height: 100vh; 
+}
+
+/* Body wrapper */
+.app-body {
+  display: flex;
+  flex: 1;
+}
+

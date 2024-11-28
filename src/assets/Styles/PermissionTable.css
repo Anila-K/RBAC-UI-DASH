@@ -1,0 +1,99 @@
+.permission-table {
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+  
+  .permission-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 18px 20px;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+  }
+  
+  .permission-checkbox {
+    margin-right: 10px;
+  }
+  .permission-checkbox input {
+    border: 1px solid black;
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .save-button {
+    background-color:#007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .save-button:hover {
+    background-color: #ccc;
+    color: #007bff;
+  }
+  .cancel-button:hover {
+    background-color: #ccc;
+    color: #f44336;
+  }
+  @media (max-width: 760px) {
+    .permission-table {
+      margin-left: 20px; 
+      padding: 15px; 
+    }
+  
+    table th,
+    table td {
+      padding: 12px 15px; 
+    }
+  
+    .buttons {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .save-button,
+    .cancel-button {
+      width: 50%; 
+      padding: 5px;
+      font-size: 14px; 
+    }
+  
+    .permission-table h2 {
+      font-size: 20px; 
+      margin-bottom: 10px;
+    }
+  }

@@ -1,0 +1,105 @@
+/* TopBar Styles */
+.top-bar {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: white !important;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.top-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin-right: 50px;
+}
+
+.top-bar-actions .icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+.dropdown-icon:hover {
+  background-color: rgb(83, 82, 82);
+}
+
+.dropdown-icon.rotate {
+  transform: rotate(180deg); 
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 10px 20px;
+    font-size: 14px; 
+    height: 54px;
+    z-index: 1000;
+    position: fixed;
+  }
+
+  .logo img {
+    height: 40px; 
+  }
+
+  .top-bar-actions {
+    margin-right: 20px; 
+    gap: 20px; 
+  }
+
+  .top-bar-actions .icon {
+    font-size: 18px; 
+  }
+}
